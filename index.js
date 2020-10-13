@@ -60,7 +60,7 @@ client.on('message', (message) => {
     return message.reply('게임하면 되자나!');
   }
 
-  if(message.content == '너 누구야') {
+  if(message.content == '유앱아 너 누구야') {
     return message.reply('나? 흠... 멀라');
   }
 
