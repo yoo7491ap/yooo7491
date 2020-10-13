@@ -43,13 +43,16 @@ client.on('message', (message) => {
     return message.reply('멍충이 나 봇인ㄷ;');
   }
 
+  if(message.content == '유앱아 사랑해') {
+    return message.reply('ㅎㅎ..뒤져');
+  }
 
   if(message.content == '유앱아 도와줘') {
     let img = '';
     let embed = new Discord.RichEmbed()
       .setTitle('유앱보오옷')
       .setURL('https://twitter.com/yoo7491_ap')
-      .setAuthor('유앱이', img, 'https://twitter.com/yoo7491_ap')
+      .setAuthor('머 도와주까', img, 'https://twitter.com/yoo7491_ap')
       .setThumbnail(img)
       .addBlankField()
       .addField('역할기능', '유저라는 역할 만드면 자동 유저 역할 부여')
@@ -65,7 +68,7 @@ client.on('message', (message) => {
   } else if(message.content == '유앱아 도움') {
     let helpImg = '';
     let commandList = [
-      {name: '으아', desc: '으아아아'},
+      {name: '왜 또', desc: '으아아아'},
       {name: '유앱아 도와줘', desc: '유앱봇이도와줌'},
       {name: '유앱아 도움', desc: '유앱이 도와줌(help)'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보냄'},
