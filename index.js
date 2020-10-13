@@ -60,6 +60,10 @@ client.on('message', (message) => {
     return message.reply('게임하면 되자나!');
   }
 
+  if(message.content == '너 누구야') {
+    return message.reply('나? 흠... 멀라');
+  }
+
   if(message.content == '유앱아 도와줘') {
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
     let embed = new Discord.RichEmbed()
@@ -86,7 +90,7 @@ client.on('message', (message) => {
       {name: '유앱아 도와줘', desc: '내가 도와주께'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
       {name: '!청소', desc: '청소!!!!!!!'},
-      {name: '!초대', desc: '초대 코드 표기'},
+      {name: '!초대코드', desc: '초대 코드 표기'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
