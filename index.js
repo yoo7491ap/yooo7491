@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.argv.length == 2 ? process.env.token : "";
-const welcomeChannelName = "채팅";
-const byeChannelName = "채팅";
+const welcomeChannelName = "입퇴장 로그";
+const byeChannelName = "입퇴장 로그";
 const welcomeChannelComment = "잘와따";
 const byeChannelComment = "잘가.";
 
@@ -76,7 +76,7 @@ client.on('message', (message) => {
       .addField('환영기능', '헤엘로오오', true)
       .addField('공지기능', '!전체공지', true)
       .addField('대화기능', '유앱아', true)
-      .addField('청소기능', '!청소\n숫자\n쓱싹쓱싹\n')
+      .addField('청소기능', '유앱아 청소\n숫자\n쓱싹쓱싹\n')
       .addBlankField()
       .setTimestamp()
       .setFooter('유앱이가 만듬', img)
@@ -89,7 +89,7 @@ client.on('message', (message) => {
       {name: '유앱아 도움', desc: '머가 궁금한데'},
       {name: '유앱아 도와줘', desc: '내가 도와주께'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
-      {name: '!청소', desc: '청소!!!!!!!'},
+      {name: '유앱아 청소', desc: '청소!!!!!!!'},
       {name: '!초대코드', desc: '초대 코드 표기'},
     ];
     let commandStr = '';
@@ -128,10 +128,10 @@ client.on('message', (message) => {
     }
   }
 
-  if(message.content.startsWith('!청소')) {
+  if(message.content.startsWith('유앱아 청소')) {
     if(checkPermission(message)) return
 
-    var clearLine = message.content.slice('!청소 '.length);
+    var clearLine = message.content.slice('유앱아 청소 '.length);
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
