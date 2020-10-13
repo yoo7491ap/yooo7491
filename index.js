@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.env.token;
+const token = 'NzY1MDMxNTY2MTI3OTIzMjIw.X4O5Kg.O_rVG-9jt68ctcUU5TsfXZlnauk';
 const welcomeChannelName = "채팅";
 const byeChannelName = "채팅";
 const welcomeChannelComment = "잘왔다";
-const byeChannelComment = "잘가라";
+const byeChannelComment = "잘가";
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -35,37 +35,37 @@ client.on('message', (message) => {
     return message.reply('머');
   }
 
-  if(message.content == 'embed') {
-    let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
+  if(message.content == '유앱아 도와줘') {
+    let img = '';
     let embed = new Discord.RichEmbed()
-      .setTitle('타이틀')
-      .setURL('http://www.naver.com')
-      .setAuthor('나긋해', img, 'http://www.naver.com')
+      .setTitle('유앱보오옷')
+      .setURL('https://twitter.com/yoo7491_ap')
+      .setAuthor('유앱이', img, 'https://twitter.com/yoo7491_ap')
       .setThumbnail(img)
       .addBlankField()
-      .addField('Inline field title', 'Some value here')
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
+      .addField('역할 기능', '유저라는 역할 만드면 자동 유저 역할 부여')
+      .addField('환영기능', '헤에에엘로', true)
+      .addField('공지기능', '!전체공지', true)
+      .addField('핑상태 보기', '어우 핑 개가타', true)
+      .addField('대화', '유앱아 라고 하면\n유앱이가 아주 \n정성을 다해 다댑해줌\n')
       .addBlankField()
       .setTimestamp()
-      .setFooter('나긋해가 만듬', img)
+      .setFooter('유앱이가 만듬', img)
 
     message.channel.send(embed)
-  } else if(message.content == 'embed2') {
-    let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
+  } else if(message.content == '유앱이도움') {
+    let helpImg = '';
     let commandList = [
       {name: 'ping', desc: '현재 핑 상태'},
-      {name: 'embed', desc: 'embed 예제1'},
-      {name: 'embed2', desc: 'embed 예제2 (help)'},
+      {name: '유앱아 도와줘', desc: '유앱아 도와줘'},
+      {name: '유앱이도움', desc: '유앱이 도움 (help)'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('Help of 콜라곰 BOT', helpImg)
+      .setAuthor('Help of 유앱봇', helpImg)
       .setColor('#186de6')
-      .setFooter(`콜라곰 BOT ❤️`)
+      .setFooter(`유앱봇`)
       .setTimestamp()
     
     commandList.forEach(x => {
@@ -86,16 +86,16 @@ client.on('message', (message) => {
         x.user.send(`<@${message.author.id}> ${contents}`);
       });
   
-      return message.reply('공지를 전송했습니다.');
+      return message.reply('공지 전송함');
     } else {
-      return message.reply('채널에서 실행해주세요.');
+      return message.reply('채널에서 실행 ㄱ');
     }
   }
 });
 
 function checkPermission(message) {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) {
-    message.channel.send(`<@${message.author.id}> ` + "명령어를 수행할 관리자 권한을 소지하고 있지않습니다.")
+    message.channel.send(`<@${message.author.id}> ` + "이 명령어쓸 관리자 권한이 없자나.")
     return true;
   } else {
     return false;
