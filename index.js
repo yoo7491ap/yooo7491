@@ -52,6 +52,14 @@ client.on('message', (message) => {
     return message.reply('딱대 :>');
   }
 
+  if(message.content == '유앱아 사랑해') {
+    return message.reply('ㅎㅎ..머');
+  }
+
+  if(message.content == '유앱아 심심해') {
+    return message.reply('게임하면 되자나!');
+  }
+
   if(message.content == '유앱아 도와줘') {
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
     let embed = new Discord.RichEmbed()
