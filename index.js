@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.argv.length == 2 ? process.env.token : '';
+const token = process.env.token;
 const welcomeChannelName = "채팅";
 const byeChannelName = "채팅";
 const welcomeChannelComment = "잘왔다";
@@ -33,27 +33,11 @@ client.on('message', (message) => {
 
   if(message.content == '유앱아') {
     return message.reply('머');
-  
   }
-  client.on('message', (message) => {
-    if(message.author.bot) return;
-  
-    if(message.content == '유앱아 엿먹어') {
-      return message.reply('머 먹으라거?');
-  }
-  
-  client.on('message', (message) => {
-    if(message.author.bot) return;
-  
-    if(message.content == '유앱아 엿먹어') {
-      return message.reply('머 먹으라거?')
-  }
-  
+
   if(message.content == '유앱아 도와줘') {
     let img = '';
     let embed = new Discord.RichEmbed()
-  
-  
       .setTitle('유앱보오옷')
       .setURL('https://twitter.com/yoo7491_ap')
       .setAuthor('유앱이', img, 'https://twitter.com/yoo7491_ap')
@@ -117,7 +101,7 @@ client.on('message', (message) => {
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
       message.channel.send("1부터 100까지만 입력해라.")
       return;
-    } else if(!isNum) { // c @유앱이 3
+    } else if(!isNum) { // c @나긋해 3
       if(message.content.split('<@').length == 2) {
         if(isNaN(message.content.split(' ')[2])) return;
 
