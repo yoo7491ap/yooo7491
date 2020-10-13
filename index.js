@@ -47,6 +47,14 @@ client.on('message', (message) => {
     return message.reply('ㅎㅎ..뒤져');
   }
 
+  if(message.content == '유앱아 뭐해?') {
+    return message.reply('어...');
+  }
+
+  if(message.content == '유앱아 딱대') {
+    return message.reply('딱대 :>');
+  }
+
   if(message.content == '유앱아 도와줘') {
     let img = '';
     let embed = new Discord.RichEmbed()
