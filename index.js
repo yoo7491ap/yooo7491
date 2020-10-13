@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const token = process.env.token;
+const token = process.argv.length == 2 ? process.env.token : '';
 const welcomeChannelName = "채팅";
 const byeChannelName = "채팅";
 const welcomeChannelComment = "잘왔다";
@@ -43,22 +43,22 @@ client.on('message', (message) => {
       .setAuthor('유앱이', img, 'https://twitter.com/yoo7491_ap')
       .setThumbnail(img)
       .addBlankField()
-      .addField('역할 기능', '유저라는 역할 만드면 자동 유저 역할 부여')
-      .addField('환영기능', '헤에에엘로', true)
+      .addField('역할기능', '유저라는 역할 만드면 자동 유저 역할 부여')
+      .addField('환영기능', '헤엘로오오', true)
       .addField('공지기능', '!전체공지', true)
-      .addField('대화기능', '머', true)
-      .addField('대화', '유앱아\n유앱아 엿먹어\nSome value here3\n')
+      .addField('대화기능', '유앱아 ', true)
+      .addField('청소 기능', '!청소\n숫자\n청소되따아아아\n')
       .addBlankField()
       .setTimestamp()
       .setFooter('유앱이가 만듬', img)
 
     message.channel.send(embed)
-  } else if(message.content == '유앱아도움') {
+  } else if(message.content == '유앱아 도움') {
     let helpImg = '';
     let commandList = [
-      {name: '머', desc: '머머'},
-      {name: '유앱아 도와줘', desc: '유앱이 도와줄거임'},
-      {name: '유앱아도움', desc: '유앱이 도움줄거임 (help)'},
+      {name: '으아', desc: '으아아아'},
+      {name: '유앱아 도와줘', desc: '유앱봇이도와줌'},
+      {name: '유앱아 도움', desc: '유앱이 도와줌(help)'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보냄'},
     ];
     let commandStr = '';
@@ -86,7 +86,7 @@ client.on('message', (message) => {
         x.user.send(`<@${message.author.id}> ${contents}`);
       });
   
-      return message.reply('공지 전송함');
+      return message.reply('공지 전송함.');
     } else {
       return message.reply('채널에서 실행 ㄱ');
     }
@@ -99,7 +99,7 @@ client.on('message', (message) => {
     var isNum = !isNaN(clearLine)
 
     if(isNum && (clearLine <= 0 || 100 < clearLine)) {
-      message.channel.send("1부터 100까지만 입력해라.")
+      message.channel.send("1부터 100까지의만 입력해")
       return;
     } else if(!isNum) { // c @나긋해 3
       if(message.content.split('<@').length == 2) {
@@ -123,7 +123,7 @@ client.on('message', (message) => {
     } else {
       message.channel.bulkDelete(parseInt(clearLine)+1)
         .then(() => {
-          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "개의 메시지삭제함. (이 메세지 곧 사라짐.)");
+          AutoMsgDelete(message, `<@${message.author.id}> ` + parseInt(clearLine) + "개의 메시지를 삭제함. (이 메세지 곧 소멸됨)");
         })
         .catch(console.error)
     }
@@ -132,7 +132,7 @@ client.on('message', (message) => {
 
 function checkPermission(message) {
   if(!message.member.hasPermission("MANAGE_MESSAGES")) {
-    message.channel.send(`<@${message.author.id}> ` + "명령어쓸 권한없자나")
+    message.channel.send(`<@${message.author.id}> ` + "명령어 쓸 권한 없자나")
     return true;
   } else {
     return false;
