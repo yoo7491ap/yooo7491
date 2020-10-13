@@ -35,6 +35,15 @@ client.on('message', (message) => {
     return message.reply('머');
   }
 
+  if(message.content == '유앱아 엿먹어') {
+    return message.reply('머 먹으라거?');
+  }
+
+  if(message.content == '유앱아 뒤져') {
+    return message.reply('멍충이 나 봇인ㄷ;');
+  }
+
+
   if(message.content == '유앱아 도와줘') {
     let img = '';
     let embed = new Discord.RichEmbed()
