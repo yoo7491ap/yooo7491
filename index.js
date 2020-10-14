@@ -67,7 +67,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == '유앱아 ㅅㅅ') {
-    return message.reply('하읏');
+    return message.reply('하읏..');
   }
 
   if(message.content == '유앱이 바보') {
