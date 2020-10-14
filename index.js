@@ -68,7 +68,7 @@ client.on('message', (message) => {
   if(message.content == '유앱아 도와줘') {
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
     let embed = new Discord.RichEmbed()
-      .setTitle('타이틀')
+      .setTitle('유앱봇 테스트서버')
       .setURL('https://discord.gg/7kR8tvT')
       .setAuthor('유앱봇', img, 'https://discord.gg/7kR8tvT')
       .setThumbnail(img)
