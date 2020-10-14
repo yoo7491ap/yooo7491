@@ -124,7 +124,7 @@ client.on('message', (message) => {
 
     message.channel.send(embed)
   } else if(message.content == '유앱아 명령어') {
-    let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
+    let helpImg = 'https://cdn.discordapp.com/avatars/401360635671347210/356ca4b3565a83f5f1cc7bcc7b25f38c.png?size=128';
     let commandList = [
       {name: '유앱아 도와줘', desc: '도움줌'},
       {name: '유앱아 명령어', desc: '명령어들'},
