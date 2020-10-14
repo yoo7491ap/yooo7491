@@ -79,7 +79,25 @@ client.on('message', (message) => {
   }
 
   if(message.content == '유앱아 섻') {
-    return message.reply('으아...역겨워..');
+    return message.reply('ㅎㅎ....');
+  }
+
+  
+  if(message.content == '유앱아 섹스') {
+    return message.reply('...?');
+  }
+
+    
+  if(message.content == '유앱아 하자') {
+    return message.reply('머를..');
+  }
+
+  if(message.content == '유앱아 병신') {
+    return message.reply('ㅂㄷㅂㄷ..');
+  }
+
+  if(message.content == '유앱아 머하냐') {
+    return message.reply('너 죽일 계ㅎ..암것도');
   }
 
   if(message.content == '-서버상태') {
