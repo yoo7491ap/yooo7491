@@ -97,7 +97,7 @@ client.on('message', (message) => {
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('유앱이가 도와줄께에에에ㅔ', helpImg)
+      .setAuthor('공지라는데', helpImg)
       .setColor('#186de6')
       .setFooter(`유앱봇`)
       .setTimestamp()
@@ -139,7 +139,7 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!전체공지2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('유앱이가 도와줄께에에에ㅔㅇ')
+        .setAuthor('공지 와써')
         .setColor('#186de6')
         .setFooter(`유앱봇`)
         .setTimestamp()
