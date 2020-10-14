@@ -97,7 +97,11 @@ client.on('message', (message) => {
   }
 
   if(message.content == '유앱아 머하냐') {
-    return message.reply('너 죽일 계ㅎ..암것도');
+    return message.reply('멀라');
+  }
+
+  if(message.content == '유앱아 그거하자') {
+    return message.reply('ㄱ..그거?');
   }
 
   if(message.content == '-서버상태') {
