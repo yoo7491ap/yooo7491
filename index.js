@@ -117,7 +117,7 @@ client.on('message', (message) => {
   } else if(message.content == '유앱아 명령어') {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
     let commandList = [
-      {name: '유앱아 도움', desc: '도움줌'},
+      {name: '유앱아 도와줘', desc: '도움줌'},
       {name: '유앱아 명령어', desc: '명령어들'},
       {name: '-전체공지', desc: 'dm으로 전체 공지 보냄'},
       {name: '유앱아 공지보내', desc: 'dm으로 전체 embed 형식으로 공지 보냄'},
