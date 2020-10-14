@@ -68,8 +68,8 @@ client.on('message', (message) => {
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
     let embed = new Discord.RichEmbed()
       .setTitle('유앱보오옷')
-      .setURL('https://discord.gg/7kR8tvT')
-      .setAuthor('머 도와주까', img, 'https://twitter.com/yoo7491_ap')
+      .setURL('https://twitter.com/yoo7491_ap')
+      .setAuthor('머 도와주까', img, 'https://discord.gg/7kR8tvT')
       .setThumbnail(img)
       .addBlankField()
       .addField('자동역할부여', '유저라는 역할 만들면 내가 유저 역할 줄거야')
