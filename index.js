@@ -75,9 +75,9 @@ client.on('message', (message) => {
       .addBlankField()
       .addField('자동역할부여', '유저라는 역할 만들면 내가 유저 역할 줄거야')
       .addField('환영기능', '입퇴장로그라는 채널을 만들어바', true)
-      .addField('!전체공자', '!전체공지2', true)
+      .addField('!전체공지', '공지보냄', true)
       .addField('대화기능', '유앱아', true)
-      .addField('청소기능', '유앱아 청소\n숫자\n쓱싹쓱싹\n')
+      .addField('마지막 업뎃', '2020\n\n10-14\n')
       .addBlankField()
       .setTimestamp()
       .setFooter('유앱이가 만듬', img)
@@ -86,8 +86,8 @@ client.on('message', (message) => {
   } else if(message.content == '유앱아 도움') {
     let helpImg = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
     let commandList = [
-      {name: '유앱아 도와줘', desc: '유앱아 도움'},
-      {name: '또 머있지..', desc: '아 기억났다'},
+      {name: '유앱아 도와줘', desc: '유앱이 도움줌'},
+      {name: '유앱아 도움', desc: '명령어'},
       {name: '유앱아 도와줘', desc: '유앱이 도움줌'},
       {name: '!전체공지', desc: 'dm으로 전체 공지 보내기'},
       {name: '!전체공지2', desc: 'dm으로 전체 embed 형식으로 공지 보내기'},
