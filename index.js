@@ -66,6 +66,14 @@ client.on('message', (message) => {
     return message.reply('너두 :>');
   }
 
+  if(message.content == '유앱아 ㅅㅅ') {
+    return message.reply('하읏');
+  }
+
+  if(message.content == '유앱이 바보') {
+    return message.reply('선넘ㄴ');
+  }
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
