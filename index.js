@@ -127,6 +127,11 @@ client.on('message', (message) => {
     return message.reply('뭔진 모르겠지만..용서해주께요');
   }
 
+  if(message.content == '유앱아 정자') {
+    return message.reply('나는 난자를 갖고있어요 님 장애세요?');
+  }
+
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
