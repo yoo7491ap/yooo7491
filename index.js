@@ -179,7 +179,7 @@ client.on('message', (message) => {
     ];
     let commandStr = '';
     let embed = new Discord.RichEmbed()
-      .setAuthor('공지 와따아아', helpImg)
+      .setAuthor('명령어', helpImg)
       .setColor('#186de6')
       .setFooter(`유앱봇`)
       .setTimestamp()
