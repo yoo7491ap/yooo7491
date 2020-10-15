@@ -104,6 +104,14 @@ client.on('message', (message) => {
     return message.reply('ㄱ..그거?');
   }
 
+  if(message.content == '유앱아 놀자') {
+    return message.reply('그래 놀아줄께');
+  }
+
+  if(message.content == '유앱아 뭐하고 놀까') {
+    return message.reply('멀라');
+  }
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
