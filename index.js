@@ -191,7 +191,7 @@ client.on('message', (message) => {
     return message.reply('...?');
   }
 
-  if(message.content == '유앱아 따먹을게 ') {
+  if(message.content == '유앱아 따먹을게') {
     return message.reply('알써');
   }
 
