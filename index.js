@@ -207,6 +207,15 @@ client.on('message', (message) => {
     return message.reply('한울씨..?');
   }
 
+  
+  if(message.content == '유앱아 잘했어') {
+    return message.reply('히힛..');
+  }
+
+  if(message.content == '유앱아 일로와') {
+    return message.reply('?');
+  }
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
@@ -353,7 +362,7 @@ client.on('message', (message) => {
       if(isNum && (clearLine <= 0 || 100 < clearLine)) {
         message.channel.send("1부터 99까지 입력해")
       return;
-    } else if(!isNum) { // c @나긋해 3
+    } else if(!isNum) { // c @유앱 3
       if(message.content.split('<@').length == 2) {
         if(isNaN(message.content.split(' ')[2])) return;
 
