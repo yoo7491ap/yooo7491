@@ -192,11 +192,15 @@ client.on('message', (message) => {
   }
 
   if(message.content == '유앱아 따먹을게') {
-    return message.reply('알써');
+    return message.reply('오빠..?');
   }
 
-  if(message.content == '유앱아 너 짜증나 ') {
+  if(message.content == '유앱아 너 짜증나') {
     return message.reply('미아내..');
+  }
+
+  if(message.content == '유앱이 병진') {
+    return message.reply('ㅇ...');
   }
 
   if(message.content == '-서버상태') {
