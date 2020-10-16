@@ -162,12 +162,18 @@ client.on('message', (message) => {
   if(message.content == '유앱아 디져') {
     return message.reply('으엑');
   }
-
   
-  if(message.content == '유앱아 죽어');
+  if(message.content == '유앱아 죽어') {
     return message.reply('시러');
   }
 
+  if(message.content == '유앱아 느금마') {
+    return message.reply('?');
+  }
+
+  if(message.content == '유앱아 박을게') {
+    return message.reply('..?');
+  }
 
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
