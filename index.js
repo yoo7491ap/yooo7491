@@ -175,6 +175,22 @@ client.on('message', (message) => {
     return message.reply('..?');
   }
 
+  if(message.content == '유앱이 느금마') {
+    return message.reply('..?');
+  }
+
+  if(message.content == '유앱이 소환!') {
+    return message.reply('푸슈유융!!!!!!!');
+  }
+
+  if(message.content == '유앱아 난자 ') {
+    return message.reply('흠..');
+  }
+
+  if(message.content == '유앱이 게이 ') {
+    return message.reply('...?');
+  }
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
