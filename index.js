@@ -191,6 +191,14 @@ client.on('message', (message) => {
     return message.reply('...?');
   }
 
+  if(message.content == '유앱아 따먹을게 ') {
+    return message.reply('알써');
+  }
+
+  if(message.content == '유앱아 너 짜증나 ') {
+    return message.reply('미아내..');
+  }
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
