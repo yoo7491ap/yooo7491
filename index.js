@@ -155,6 +155,15 @@ client.on('message', (message) => {
     return message.reply('시룬데에에에에에엥');
   }
 
+  if(message.content == '유앱아 ㅗ') {
+    return message.reply('ㅗ');
+  }
+
+  if(message.content == '유앱아 ㅗㅗ') {
+    return message.reply('ㅗㅗ');
+  }
+
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/4b9a15ac349c539b8dd5ccfdbb77d202.png?size=128';
