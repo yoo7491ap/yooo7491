@@ -131,6 +131,13 @@ client.on('message', (message) => {
     return message.reply('나는 난자를 갖고있어요 님 장애세요?');
   }
 
+  if(message.content == '유앱아 새 프로모코드 나왔어') {
+    return message.reply('진짜??');
+  }
+
+  if(message.content == '유앱아?') {
+    return message.reply('엉?');
+  }
 
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
