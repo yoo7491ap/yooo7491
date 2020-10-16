@@ -159,8 +159,13 @@ client.on('message', (message) => {
     return message.reply('ㅗ');
   }
 
-  if(message.content == '유앱아 ㅗㅗ') {
-    return message.reply('ㅗㅗ');
+  if(message.content == '유앱아 디져') {
+    return message.reply('으엑');
+  }
+
+  
+  if(message.content == '유앱아 죽어');
+    return message.reply('시러');
   }
 
 
