@@ -38,6 +38,7 @@ client.on("messageUpdate", (message) => {
 });
 
 client.on('message', (message) => {
+  MessageSave(message)
   if(message.author.bot) return;
 
   if(message.content == '유앱아') {
@@ -88,12 +89,10 @@ client.on('message', (message) => {
     return message.reply('ㅎㅎ....');
   }
 
-  
   if(message.content == '유앱아 섹스') {
     return message.reply('...?');
   }
 
-    
   if(message.content == '유앱아 하자') {
     return message.reply('머를..');
   }
@@ -118,7 +117,6 @@ client.on('message', (message) => {
     return message.reply('멀라');
   }
 
-  
   if(message.content == '유앱아 놀아줘') {
     return message.reply('그래');
   }
@@ -207,7 +205,6 @@ client.on('message', (message) => {
     return message.reply('한울씨..?');
   }
 
-  
   if(message.content == '유앱아 잘했어') {
     return message.reply('히힛..');
   }
@@ -220,7 +217,6 @@ client.on('message', (message) => {
     return message.reply('ㄴㄱㅁ');
   }
 
-  
   if(message.content == '유앱아!') {
     return message.reply('?');
   }
