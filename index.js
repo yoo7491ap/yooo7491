@@ -21,7 +21,7 @@ client.on("guildMemberAdd", (member) => {
   const welcomeChannel = guild.channels.find(channel => channel.name == welcomeChannelName);
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
-
+D
   member.addRole(guild.roles.find(role => role.name == "유저"));
 });
 
@@ -219,6 +219,10 @@ client.on('message', (message) => {
 
   if(message.content == '유앱아!') {
     return message.reply('?');
+  }
+
+  if(message.content == '유앱아 슬라 죽여') {
+    return message.reply('(경계중..)');
   }
 
   if(message.content == '-서버상태') {
