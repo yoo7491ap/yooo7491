@@ -235,7 +235,7 @@ client.on('message', (message) => {
     embed.addBlankField()
     embed.addField('RAM usage',    `${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB`, true);
     embed.addField('running time', `${duration}`, true);
-    embed.addField('유저',         `${client.users.size.toLocaleString()}`, true);
+    embed.addField('온라인 유저',         `${client.users.size.toLocaleString()}`, true);
     embed.addField('서버',       `${client.guilds.size.toLocaleString()}`, true);
     // embed.addField('channel',      `${client.channels.size.toLocaleString()}`, true);
     embed.addField('Discord.js',   `v${Discord.version}`, true);
