@@ -72,11 +72,7 @@ client.on('message', (message) => {
   if(message.content == '유앱이 멍청이') {
     return message.reply('너두 :>');
   }
-
-  if(message.content == '유앱아 ㅅㅅ') {
-    return message.reply('하읏..');
-  }
-
+  
   if(message.content == '유앱이 바보') {
     return message.reply('선넘ㄴ');
   }
@@ -123,10 +119,6 @@ client.on('message', (message) => {
 
   if(message.content == '유앱아 미안해') {
     return message.reply('뭔진 모르겠지만..용서해주께요');
-  }
-
-  if(message.content == '유앱아 정자') {
-    return message.reply('나는 난자를 갖고있어요 님 장애세요?');
   }
 
   if(message.content == '유앱아 새 프로모코드 나왔어') {
@@ -181,16 +173,8 @@ client.on('message', (message) => {
     return message.reply('푸슈유융!!!!!!!');
   }
 
-  if(message.content == '유앱아 난자 ') {
-    return message.reply('흠..');
-  }
-
   if(message.content == '유앱이 게이 ') {
     return message.reply('...?');
-  }
-
-  if(message.content == '유앱아 따먹을게') {
-    return message.reply('오빠..?');
   }
 
   if(message.content == '유앱아 너 짜증나') {
@@ -201,20 +185,12 @@ client.on('message', (message) => {
     return message.reply('ㅇ...');
   }
 
-  if(message.content == '유앱아 한울') {
-    return message.reply('한울씨..?');
-  }
-
   if(message.content == '유앱아 잘했어') {
     return message.reply('히힛..');
   }
 
   if(message.content == '유앱아 일로와') {
     return message.reply('?');
-  }
-
-  if(message.content == '유앱아 엄마') {
-    return message.reply('ㄴㄱㅁ');
   }
 
   if(message.content == '유앱아!') {
