@@ -197,6 +197,14 @@ client.on('message', (message) => {
     return message.reply('?');
   }
 
+  if(message.content == '무다') {
+    return message.reply('오라오라오라오라오라오라오라오라오라');
+  }
+
+  if(message.content == '오라') {
+    return message.reply('무다무다무다무다무다무다무다무다무다');
+  }
+
   if(message.content == '유앱아 슬라 죽여') {
     return message.reply('(경계중..)');
   }
