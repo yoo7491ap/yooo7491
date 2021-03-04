@@ -178,7 +178,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == '유앱아 너 짜증나') {
-    return message.reply('미아내..');
+    return message.reply('미안해..');
   }
 
   if(message.content == '유앱이 병진') {
@@ -205,8 +205,16 @@ client.on('message', (message) => {
     return message.reply('무다무다무다무다무다무다무다무다무다');
   }
 
+  if(message.content == 'ㅗ') {
+    return message.reply('wth....?');
+  }
+
   if(message.content == '유앱아 슬라 죽여') {
     return message.reply('(경계중..)');
+  }
+
+  if(message.content == '심심하다') {
+    return message.reply('놀아줄까');
   }
 
   if(message.content == '-서버상태') {
