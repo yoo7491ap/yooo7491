@@ -257,7 +257,7 @@ client.on('message', (message) => {
       .setThumbnail(img)
       .addBlankField()
       .addField('유앱아 명령어', '명령어 보여줌')
-      .addField('자동역할부여', '역할 만들고 이름을 유저라고 바꿔바', true)
+      .addField('자동역할부여(망가짐)', '역할 만들고 이름을 유저라고 바꿔바', true)
       .addField('환영기능', '채널만들고 입퇴장로그라고 이름 바꿔바', true)
       .addField('공지기능', '-전체공지,유앱아 공지보내', true)
       .addField('초대링크', '-초대코드,-초대코드2', true)
