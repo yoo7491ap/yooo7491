@@ -257,7 +257,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == '유앱아 도와줘') {
-    let img = 'https://cdn.discordapp.com/avatars/765031566127923220/f3ace9dbb7126589c86295a9078ef9ad.png?size=256';
+    let img = 'https://cdn.discordapp.com/avatars/401360635671347210/5575206b535c674cbb21251a9c8e2052.png?size=256';
     let embed = new Discord.RichEmbed()
       .setTitle('유앱봇테스트서버')
       .setURL('https://discord.gg/7kR8tvT')
@@ -275,7 +275,7 @@ client.on('message', (message) => {
 
     message.channel.send(embed)
   } else if(message.content == '유앱아 명령어') {
-    let helpImg = 'https://cdn.discordapp.com/avatars/401360635671347210/5575206b535c674cbb21251a9c8e2052.png?size=256';
+    let helpImg = 'https://cdn.discordapp.com/avatars/765031566127923220/f3ace9dbb7126589c86295a9078ef9ad.png?size=256';
     let commandList = [
       {name: '유앱아 도와줘', desc: '도움줌'},
       {name: '유앱아 명령어', desc: '명령어들'},
