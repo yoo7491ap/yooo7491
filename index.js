@@ -225,6 +225,10 @@ client.on('message', (message) => {
     return message.reply('느그 엄론즈 ㅅㄱ');
   }
 
+  if(message.content == '추모') {
+    return message.reply('"추모중"');
+  }
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/f3ace9dbb7126589c86295a9078ef9ad.png?size=256';
