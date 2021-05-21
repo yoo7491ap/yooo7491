@@ -81,10 +81,6 @@ client.on('message', (message) => {
     return message.reply('안뇽!!!!');
   }
 
-  if(message.content == '유앱아 섻') {
-    return message.reply('ㅎㅎ....');
-  }
-
   if(message.content == '유앱아 섹스') {
     return message.reply('...?');
   }
@@ -197,14 +193,6 @@ client.on('message', (message) => {
     return message.reply('?');
   }
 
-  if(message.content == '무다') {
-    return message.reply('오라오라오라오라오라오라오라오라오라');
-  }
-
-  if(message.content == '오라') {
-    return message.reply('무다무다무다무다무다무다무다무다무다');
-  }
-
   if(message.content == 'ㅗ') {
     return message.reply('wth....?');
   }
@@ -221,16 +209,12 @@ client.on('message', (message) => {
     return message.reply('이 ^^l');
   }
 
-  if(message.content == '유앱 깨못하네') {
+  if(message.content == '유앱 개못하네') {
     return message.reply('느그 엄론즈 ㅅㄱ');
   }
 
   if(message.content == '추모') {
     return message.reply('"추모중"');
-  }
-
-  if(message.content == '점프') {
-    return message.reply('다리 부서짐');
   }
 
   if(message.content == '-서버상태') {
