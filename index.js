@@ -229,6 +229,10 @@ client.on('message', (message) => {
     return message.reply('"추모중"');
   }
 
+  if(message.content == '점프') {
+    return message.reply('다리 부서짐');
+  }
+
   if(message.content == '-서버상태') {
     let embed = new Discord.RichEmbed()
     let img = 'https://cdn.discordapp.com/avatars/765031566127923220/f3ace9dbb7126589c86295a9078ef9ad.png?size=256';
