@@ -21,7 +21,7 @@ client.on("guildMemberAdd", (member) => {
   const welcomeChannel = guild.channels.find(channel => channel.name == welcomeChannelName);
 
   welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
-D
+  
   member.addRole(guild.roles.find(role => role.name == "유저"));
 });
 
