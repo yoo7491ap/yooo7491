@@ -45,10 +45,6 @@ client.on('message', (message) => {
     return message.reply('머');
   }
 
-  if(message.content == '유앱아 뒤져') {
-    return message.reply('멍충이 나 봇인ㄷ;');
-  }
-
   if(message.content == '유앱아 엿먹어') {
     return message.reply('머 먹으라거?');
   }
@@ -79,10 +75,6 @@ client.on('message', (message) => {
 
   if(message.content == '유앱아 환영해줘') {
     return message.reply('안뇽!!!!');
-  }
-
-  if(message.content == '유앱아 섻') {
-    return message.reply('ㅎㅎ....');
   }
 
   if(message.content == '유앱아 섹스') {
@@ -197,14 +189,6 @@ client.on('message', (message) => {
     return message.reply('?');
   }
 
-  if(message.content == '무다') {
-    return message.reply('오라오라오라오라오라오라오라오라오라');
-  }
-
-  if(message.content == '오라') {
-    return message.reply('무다무다무다무다무다무다무다무다무다');
-  }
-
   if(message.content == 'ㅗ') {
     return message.reply('wth....?');
   }
@@ -221,8 +205,12 @@ client.on('message', (message) => {
     return message.reply('이 ^^l');
   }
 
-  if(message.content == '유앱 깨못하네') {
+  if(message.content == '유앱 개못하네') {
     return message.reply('느그 엄론즈 ㅅㄱ');
+  }
+
+  if(message.content == '추모') {
+    return message.reply('"추모중"');
   }
 
   if(message.content == '-서버상태') {
@@ -257,7 +245,7 @@ client.on('message', (message) => {
   }
 
   if(message.content == '유앱아 도와줘') {
-    let img = 'https://cdn.discordapp.com/avatars/765031566127923220/f3ace9dbb7126589c86295a9078ef9ad.png?size=256';
+    let img = 'https://cdn.discordapp.com/avatars/401360635671347210/5575206b535c674cbb21251a9c8e2052.png?size=256';
     let embed = new Discord.RichEmbed()
       .setTitle('유앱봇테스트서버')
       .setURL('https://discord.gg/7kR8tvT')
@@ -275,7 +263,7 @@ client.on('message', (message) => {
 
     message.channel.send(embed)
   } else if(message.content == '유앱아 명령어') {
-    let helpImg = 'https://cdn.discordapp.com/avatars/401360635671347210/5575206b535c674cbb21251a9c8e2052.png?size=256';
+    let helpImg = 'https://cdn.discordapp.com/avatars/765031566127923220/f3ace9dbb7126589c86295a9078ef9ad.png?size=256';
     let commandList = [
       {name: '유앱아 도와줘', desc: '도움줌'},
       {name: '유앱아 명령어', desc: '명령어들'},
